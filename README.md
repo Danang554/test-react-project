@@ -1,6 +1,6 @@
 # Node.js REST API Single Page Application (SPA) Frontend
 
-Frontend Client testing berarsitektur modern dan berstandar best practice untuk mengonsumsi dan menguji seluruh endpoint REST API dari backend Node.js Clean Architecture (`C:\Test Project\Node\test-node-project`). Dibangun menggunakan **React 19**, **Vite**, **Tailwind CSS v4**, **React Router v7**, **Lucide React**, dan **Axios**.
+Frontend Client testing berarsitektur modern dan berstandar best practice untuk mengonsumsi dan menguji seluruh endpoint REST API dari backend Node.js Clean Architecture. Dibangun menggunakan **React 19**, **Vite**, **Tailwind CSS v4**, **React Router v7**, **Lucide React**, dan **Axios**.
 
 ---
 
