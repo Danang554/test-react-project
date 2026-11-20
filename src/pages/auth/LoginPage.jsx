@@ -15,11 +15,11 @@ export default function LoginPage() {
 
   const redirectPath = location.state?.from?.pathname || '/'
 
-  const setDemoCredentials = (e, p) => {
-    setEmail(e)
-    setPassword(p)
-    setErrors({})
-  }
+  // const setDemoCredentials = (e, p) => {
+  //   setEmail(e)
+  //   setPassword(p)
+  //   setErrors({})
+  // }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -55,7 +55,7 @@ export default function LoginPage() {
       </div>
 
       {/* Quick Demo Accounts Helper */}
-      <div className="mb-6 p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60">
+      {/* <div className="mb-6 p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60">
         <div className="flex items-center justify-between mb-2">
           <span className="text-[11px] font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
             Quick Demo Accounts
@@ -111,7 +111,7 @@ export default function LoginPage() {
             </div>
           </button>
         </div>
-      </div>
+      </div> */}
 
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Email */}
@@ -128,7 +128,7 @@ export default function LoginPage() {
                 setEmail(e.target.value)
                 if (errors.email) setErrors((prev) => ({ ...prev, email: null }))
               }}
-              placeholder="admin@example.com"
+              placeholder="you@example.com"
               className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none transition"
             />
           </div>
